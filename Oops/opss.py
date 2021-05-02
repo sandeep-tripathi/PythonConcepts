@@ -8,6 +8,6 @@ For each directory in the tree rooted at directory top (including top itself),
 it yields a 3-tuple (dirpath, dirnames, filenames)."""
  
  
-for dirpath, dirnames, filenames in os.walk('/home/panda/'):
+for dirpath, dirnames, filenames in os.walk('/home/panda/', topdown=True):
     print('Current Path:',dirpath)
     print('Current Path:',dirnames)
